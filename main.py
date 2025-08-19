@@ -21,8 +21,8 @@ if __name__ == "__main__":
     hours = 0
     while True:
         if count % 60 == 0:
-            hours += 1
             print(f"Calendar Sync has been running for {hours} hours.")
+            hours += 1
         schedule.run_pending()
         time.sleep(60)
         count += 1
